@@ -24,6 +24,15 @@ ul {
   list-style: none;
 }
 
+header,
+section,
+footer {
+  margin: auto;
+  max-width: 1500px;
+  min-width: 320px;
+  overflow: hidden;
+}
+
 .bdr {
   border-bottom: 1px solid #00000014;
   border-top: 1px solid #00000014;
@@ -840,7 +849,7 @@ p.section-phraseCEO-company,
   border-radius: 5px;
   height: 65px;
   padding: 1rem;
-  width: clamp(200px, 60%, 535px);
+  width: clamp(200px, 80%, 535px);
   &::placeholder {
     color: #fff;
     font-size: 0.9rem;
@@ -1119,7 +1128,7 @@ p.section-phraseCEO-company,
 
   .section-welcome-container > div,
   .section-grafic-content {
-    width: 420px;
+    width: 410px;
     margin: 5px;
   }
 
@@ -1181,7 +1190,7 @@ p.section-phraseCEO-company,
   }
 
   .carrousel-item-commit {
-    width: 365px;
+    width: 355px;
     font-size: 1rem;
   }
 
