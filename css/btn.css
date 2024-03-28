@@ -1,0 +1,135 @@
+/* btn */
+
+.btn {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 12px 20px;
+}
+.btn-bg-primary {
+  background-color: var(--color-second);
+}
+
+.btn-br-primary {
+  border: 1px solid var(--color-second);
+}
+
+.btn-cl-primary {
+  color: var(--color-second);
+}
+
+.btn-cl-secondy {
+  color: #fff;
+}
+
+.btn.btn-cl-primary {
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.6s;
+  /* margin-right: 40px; */
+  &:hover {
+    color: #fff;
+    background-color: var(--color-second);
+  }
+}
+
+/* header */
+
+#mainHeader .item-navbar-mainHeader {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 8px;
+  padding: 12px;
+  transition: 0.4s all;
+  &:hover {
+    color: var(--color-second);
+  }
+}
+
+/* section welcome */
+
+.section-welcome .btn.btn-cl-secondy.btn-bg-primary,
+.section-grafic-second .btn.btn-cl-secondy.btn-bg-primary {
+  background-color: #0482d6;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px 10px #2424243f;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  padding: 20px;
+  text-shadow: 1px 1px 1px #00000060;
+  transition: 0.4s all;
+  width: 220px;
+  &:hover {
+    background-color: var(--color-second);
+    box-shadow: 0 5px 10px 2px #0808084b;
+  }
+}
+
+.section-business-cards-items .btn-cl-primary.btn-br-primary,
+.section-price-cards-items .btn-cl-primary.btn-br-primary,
+.section-price-cards-items .btn-bg-primary.btn-cl-secondy {
+  font-family: "Dosis", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 20px auto;
+  transition: 0.4s;
+}
+
+.section-price-cards-items .btn {
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+}
+
+.section-price-cards-items .btn-bg-primary.btn-cl-secondy:hover {
+  background-color: #0482d6;
+}
+
+/* contact */
+
+.section-contact .btn {
+  border-radius: 5px;
+  font-size: .8rem;
+  padding: 20px;
+  transition: .4s all;
+  &:hover { background-color: #0482d6;
+  }
+}
+
+@media (max-width: 1024px) {
+  #mainHeader .btn.btn-cl-primary {
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+
+  #mainHeader .item-navbar-mainHeader {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* ------------------------ header */
+
+  .btn {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px 10px;
+  }
+
+  #mainHeader .item-navbar-mainHeader .btn.btn-cl-primary {
+    font-size: 0.9rem;
+  }
+
+  /* --------------------------cards */
+  .section-business-cards-items .btn-cl-primary.btn-br-primary,
+  .section-price-cards-items .btn-cl-primary.btn-br-primary,
+  .section-price-cards-items .btn-bg-primary.btn-cl-secondy {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}

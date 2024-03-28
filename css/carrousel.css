@@ -1,0 +1,137 @@
+/* -------------------------------carrousel section commits*/
+
+.carrousel {
+  overflow: hidden;
+  position: relative;
+  transform: translateX(0);
+}
+
+.carrousel-inner {
+  display: flex;
+  height: 400px;
+  width: 300%;
+}
+
+.carrousel-inner input {
+  display: none;
+}
+
+.carrousel-item {
+  position: relative;
+  transition: 2s;
+}
+
+.manual-navigation,
+.navigation-control {
+  bottom: 2px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 900px;
+}
+
+.manual-btn,
+.navigation-control div {
+  background-color: #cacaca2f;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+  transition: 1s;
+  width: 25px;
+  &:hover {
+    background-color: #1e90ff;
+  }
+}
+
+.manual-btn:not(:last-child),
+.navigation-control div:not(:last-child) {
+  margin-right: 10px;
+}
+
+#commits1:checked ~ .first {
+  margin-left: 0;
+}
+
+#commits2:checked ~ .first {
+  margin-left: -35%;
+}
+#commits3:checked ~ .first {
+  margin-left: -70%;
+}
+
+#commits1:checked ~ .navigation-control .navigation-btn1,
+#commits2:checked ~ .navigation-control .navigation-btn2,
+#commits3:checked ~ .navigation-control .navigation-btn3 {
+  background-color: #1e90ff;
+}
+
+/* ---------------------------------------------- */
+
+.section-projects .carrousel-inner {
+  height: 450px;
+}
+.section-projects .manual-navigation,
+.section-projects .navigation-control {
+  bottom: 2px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+#projectsitem1:checked ~ .first {
+  margin-left: 0;
+}
+
+#projectsitem2:checked ~ .first {
+  margin-left: -8%;
+}
+#projectsitem3:checked ~ .first {
+  margin-left: -16%;
+}
+#projectsitem4:checked ~ .first {
+  margin-left: -24%;
+}
+#projectsitem5:checked ~ .first {
+  margin-left: -32%;
+}
+
+#projectsitem1:checked ~ .navigation-control .navigation-btn1,
+#projectsitem2:checked ~ .navigation-control .navigation-btn2,
+#projectsitem3:checked ~ .navigation-control .navigation-btn3,
+#projectsitem4:checked ~ .navigation-control .navigation-btn4,
+#projectsitem5:checked ~ .navigation-control .navigation-btn5 {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .manual-navigation,
+  .navigation-control {
+    width: 768px;
+  }
+}
+
+@media (max-width: 425px) {
+  .manual-navigation,
+  .navigation-control {
+    width: 425px;
+  }
+
+  .section-projects .carrousel-inner {
+    height: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .manual-navigation,
+  .navigation-control {
+    width: 375px;
+  }
+}
+
+@media (max-width: 320px) {
+  .manual-navigation,
+  .navigation-control {
+    width: 320px;
+  }
+}
